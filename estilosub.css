@@ -13,7 +13,7 @@ body{
     background-color: #ffd000;
     color: #444;
     float: left;
-    width: 250px;
+    width: 20%;
     height: 40px;
     display: inline-block;
     text-align: center;
@@ -30,12 +30,15 @@ body{
 }
 .menu ul ul{
     display: none;
+    
 }
 .menu ul li:hover >ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 500%;
 }
 .menu ul ul ul{
-    margin-left: 273px;
+    margin-left: 100%;
     top: 0px;
     position: absolute;
 }
@@ -52,12 +55,11 @@ body{
     text-decoration: none;
 }
 #rp{
-    position:static;
-    bottom: 20px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
     text-align: center;
 }
-#rp h5{
-    min-width: 100vw;
-}
-
 textarea{resize:none;}
+
+

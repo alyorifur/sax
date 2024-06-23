@@ -1,65 +1,48 @@
 <!doctype html>
 	<head>
-		<title>cadastro dos animais</title>
+		<title>Contato</title>
 		<meta charset = "utf-8"> <!--configura acentuação -->
 		<meta name="description" content="cadastro"> <!--palavras que o site contém-->
 		<meta name="keywords" content="cadastro, nome, nascimento, data, comentario"> <!--palavras que a página/site contém-->
 		<meta name="author" content="Alyf DS1"> <!--author-->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--configura visualização em uma grande variação de tamanhos e orientações de tela-->
 		<link rel="icon" type="image/.png" href="icapc.png"> <!-- icone da página -->
-        <link rel="stylesheet" type="text/css" href="estilo.css"> <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="estilosub.css"> <!--CSS-->
 		<script language="javascript" type="text/javascript">
             function validar(){
-                var nomep=form1.nomep.value;
-                var nomea=form1.nomea.value;
-                var datac=form1.datac.value;
-				var datan=form1.datan.value;
-                var end=form1.end.value;
-				var raca=form1.raca.value;
+                var nome=form1.nome.value;
+                var data=form1.data.value;
+                var email=form1.email.value;
+				var nota=form1.nota.value;
 
-                if(nomep==""){
+                if(nome==""){
                     alert("Preencha esse campo com seu nome");
-                    form1.nomep.focus();
+                    form1.nome.focus();
                     return false;
                 }
-				if(datac==""){
+				if(data==""){
                     alert("Preencha esse campo com a data de hoje");
-                    form1.datac.focus();
+                    form1.data.focus();
                     return false;
                 }
-                if(end==""){
-                    alert("Preencha esse campo com seu endereço");
-                    form1.end.focus();
+                if(email==""){
+                    alert("Preencha esse campo com seu email");
+                    form1.email.focus();
                     return false;
                 }
-				if(nomea==""){
-                    alert("Preencha esse campo com o nome do seu animal");
-                    form1.nomea.focus();
+				if(nota==""){
+                    alert("Preencha esse campo com sua nota para o site");
+                    form1.nota.focus();
                     return false;
                 }
-				if(datan==""){
-                    alert("Preencha esse campo com a data de Nascimento do seu animal");
-                    form1.datan.focus();
-                    return false;
-                }
-				if(raca==""){
-                    alert("Preencha esse campo com a raça do seu animal");
-                    form1.raca.focus();
-                    return false;
-                }
-                if(nomep.length<4){
+                if(nome.length<4){
                     alert("Preencha com seu nome completo");
-                    form1.nomep.focus();
+                    form1.nome.focus();
                     return false;
                 }
-				if(nomea.length<3){
-                    alert("Preencha com seu nome completo");
-                    form1.nomea.focus();
-                    return false;
-                }
-				if(end.length<9){
-                    alert("Preencha com seu endereço completo");
-                    form1.end.focus();
+				if(email.length<9){
+                    alert("Preencha com seu email completo");
+                    form1.email.focus();
                     return false;
                 }
             }
@@ -101,36 +84,31 @@
             </ul>
         </nav>
 		<center>
-		<font face=times new roman><h1>Cadastro de animais</h1></font>
-		<hr align=“center” size=“300” width=“200”>
-		<br>
-		<br>
-		Preencha os dados abaixo para realizar o seu cadastro:
+		<h1>Fale com a gente</h1>
+		<hr>
 		<br>
 		<br>
         <form name="form1" action="ced.html" method="post">
-			Nome do proprietario:<input name="nomep" type="text" size="60" placeholder="Campo obrigatório! Preencha seu Nome aqui!"><br><br>
-            Data de cadastro:<input name="datac" tabindex="3" type="date"> <br><br>
-            Endereço:<input name="end" type="text" size="60" placeholder="Campo obrigatório! Preencha seu Endereço aqui!""> <br><br>
-            Nome do animal:<input name="nomea" type="text" size="60" placeholder="Campo obrigatório! Preencha o Nome do seu animal aqui!"><br><br>
-			Data de nacimento do animal:<input name="datan" tabindex="3" type="date"> <br><br>
-			Raça:<select name="raca">
+			Nome:<input name="nome" type="text" size="60" placeholder="Campo obrigatório! Preencha seu Nome aqui!"><br><br>
+            Data:<input name="data" tabindex="3" type="date"> <br><br>
+            Email:<input name="email" type="text" size="60" placeholder="Campo obrigatório! Preencha seu Email aqui!"> <br><br>
+			Nota:<select name="nota">
 				<option> </option>
-                <option>Buldog</option>
-                <option>Labrador</option>
-                <option>Golden</option>
-                <option>Salsicha</option>
-                <option>Husk siberiano</option>
+                <option>Muito bom</option>
+                <option>Bom</option>
+                <option>Mais ou menos</option>
+                <option>Ruim</option>
+                <option>Muito ruim</option>
             </select>
             <br><br>
 			Deixe algum comentário:(opcional)
 			<br>
-			<textarea cols="50" rows="20" name="comentario"></textarea>
+			<textarea cols="50" rows="16" name="comentario"></textarea>
 		<br>
 		<input type="submit" onclick="return validar()" value="ENVIAR">
 		<input type="reset" value ="LIMPAR">
 		</form>
-		<br><br>
+		<br>
         <br>
         <div id="rp">
             <hr>

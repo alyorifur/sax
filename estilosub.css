@@ -56,10 +56,19 @@ body{
 }
 #rp{
     position: static;
-    bottom: 0px;
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }
-textarea{resize:none;}
+#rph{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+textarea{
+    resize:none;
+}
 
 

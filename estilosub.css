@@ -60,6 +60,12 @@ body{
     width: 100%;
     text-align: center;
 }
+#rp img{
+    position: static;
+    bottom: 10px;
+    width: 100%;
+    text-align: right;
+}
 #rph{
     position: fixed;
     bottom: 10px;

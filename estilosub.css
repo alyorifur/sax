@@ -70,6 +70,13 @@ body{
    padding: 22%;
    text-align: center;
 }
+#centerh{
+    padding: 2%;
+    text-align: center;
+ }
+#align{
+    text-align: center;
+}
 #titulo{
     text-align: center;
     padding: 5%;
